@@ -2,7 +2,16 @@
 const nextConfig = {
 
     images: {
-        domains: ['images.unsplash.com']
+        remotePatterns: [
+            {
+                protocol: "http",
+                hostname: "localhost",
+            },
+            {
+                protocol: "https",
+                hostname: "flpstoreproject.vercel.app",
+            },
+        ],
     },
 };
 
